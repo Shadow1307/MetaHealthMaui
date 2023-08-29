@@ -170,7 +170,7 @@
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.10\ref\net7.0\System.Xml.XPath.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.10\ref\net7.0\System.Xml.XPath.XDocument.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.10\ref\net7.0\WindowsBase.dll"
---annotations="C:\Medical\MetaHealthMaui\BleDev\obj\Debug\net7.0-android\library_project_annotations\BleDev_release_v2.6.7.aar\annotations.zip"
+--annotations="H:\VCS\metahealthMAUI\BleDev\obj\Debug\net7.0-android\library_project_annotations\BleDev_release_v2.6.7.aar\annotations.zip"
 "--enumfields=Transforms\EnumFields.xml"
 "--enummethods=Transforms\EnumMethods.xml"
 "--fixup=Transforms\Metadata.xml"

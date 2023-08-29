@@ -35,6 +35,13 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="BTRequestBtn"
+                Text="Request BT permission"
+                SemanticProperties.Hint="Request permission to use bluetooth"
+                Clicked="OnBTPermissionClicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

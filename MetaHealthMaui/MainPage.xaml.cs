@@ -23,6 +23,32 @@ namespace MetaHealthMaui
             _bleDevService.BindDeviceService(BleDevice.Thermometer);
         }
 
+        private async void OnBTPermissionClicked(object sender, EventArgs e)
+        {
+            _bleDevService.BindDeviceService(BleDevice.Thermometer);
+
+            var status = PermissionStatus.Unknown;
+            status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
+
+            if (status == PermissionStatus.Granted)
+            {
+                return;
+            }
+
+            if (Permissions.ShouldShowRationale<Permissions.LocationWhenInUse>())
+            {
+                await Shell.Current.DisplayAlert("Permissions required", "location required", "Ok");
+            }
+
+            status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+
+            if (status != PermissionStatus.Granted)
+            {
+                await Shell.Current.DisplayAlert("Permissions required", "location required", "Ok");
+            }
+
+        }
+
         private void OnServiceBind(object sender, EventArgs e)
         {
             HandleBleStateChanged(_bleDevService.BleState);
