@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MetaHealthMaui.MainPage">
+             x:Class="MetaHealthMaui.MainPage"
+             xmlns:viewmodel="clr-namespace:MetaHealthMaui.ViewModel"
+             x:DataType="viewmodel:MainPageViewModel">
 
     <ScrollView>
         <VerticalStackLayout
@@ -35,11 +37,11 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
-            <Button
-                x:Name="BTRequestBtn"
-                Text="Request BT permission"
-                SemanticProperties.Hint="Request permission to use bluetooth"
-                Clicked="OnBTPermissionClicked"
+            <Button 
+                Text="Request Bluetooth"
+                FontAttributes="Bold"
+                Command="{Binding RequestBluetoothCommand}"
+                IsVisible="{OnPlatform Android=true, Default=false}"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

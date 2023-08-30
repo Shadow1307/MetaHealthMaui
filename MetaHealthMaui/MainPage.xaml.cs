@@ -1,5 +1,5 @@
 ﻿using MetaHealthMaui.BleDev;
-using Microsoft.Maui.ApplicationModel;
+using MetaHealthMaui.ViewModel;
 
 namespace MetaHealthMaui
 {
@@ -7,7 +7,7 @@ namespace MetaHealthMaui
     {
         private readonly IBleDevService _bleDevService;
 
-        public MainPage()
+        public MainPage(MainPageViewModel vm)
         {
             _bleDevService = Application.Current.MainPage.Handler.MauiContext.Services.GetService<IBleDevService>();
 
@@ -16,37 +16,12 @@ namespace MetaHealthMaui
             _bleDevService.MonitorDataTransmissionServiceException += OnServiceBindException;
 
             InitializeComponent();
+            BindingContext = vm;
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
             _bleDevService.BindDeviceService(BleDevice.Thermometer);
-        }
-
-        private async void OnBTPermissionClicked(object sender, EventArgs e)
-        {
-            _bleDevService.BindDeviceService(BleDevice.Thermometer);
-
-            var status = PermissionStatus.Unknown;
-            status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
-
-            if (status == PermissionStatus.Granted)
-            {
-                return;
-            }
-
-            if (Permissions.ShouldShowRationale<Permissions.LocationWhenInUse>())
-            {
-                await Shell.Current.DisplayAlert("Permissions required", "location required", "Ok");
-            }
-
-            status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
-
-            if (status != PermissionStatus.Granted)
-            {
-                await Shell.Current.DisplayAlert("Permissions required", "location required", "Ok");
-            }
-
         }
 
         private void OnServiceBind(object sender, EventArgs e)
@@ -105,25 +80,12 @@ namespace MetaHealthMaui
                     }
                     else
                     {
-                        var status = PermissionStatus.Unknown;
-                        status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
-
-                        if (status == PermissionStatus.Granted)
-                        {
-                            return;
-                        }
-
-                        if (Permissions.ShouldShowRationale<Permissions.LocationWhenInUse>())
-                        {
-                            await Shell.Current.DisplayAlert("Location required", "location required", "Ok");
-                        }
-
-                        status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+                        //MainPageViewModel.RequestBluetooth();
+                        //TODO get the bluetooth request to be called here instead of on button click
 
                         //Check permission manager for IsAllowBluetooth
                         _bleDevService.AutoScan(true);
                         //Set text to Scanning, click STOP
-                        
                     }
                     break;
                 case BleState.Connecting:

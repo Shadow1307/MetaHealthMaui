@@ -1,5 +1,6 @@
 ﻿using MetaHealthMaui.BleDev;
 using Microsoft.Extensions.Logging;
+using MetaHealthMaui.ViewModel;
 
 namespace MetaHealthMaui
 {
@@ -15,6 +16,10 @@ namespace MetaHealthMaui
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<MainPageViewModel>();
+            builder.Services.AddSingleton<MainPage>();
+
 #if ANDROID
             builder.Services.AddSingleton<IBleDevService, Platforms.Android.BleDev.BleDevService>();
 //#elif IOS
