@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\VCS\\metahealthMAUI\\BleDev\\BleDev.csproj": {}
+    "C:\\Medical\\MetaHealthMaui\\BleDev\\BleDev.csproj": {}
   },
   "projects": {
-    "H:\\VCS\\metahealthMAUI\\BleDev\\BleDev.csproj": {
+    "C:\\Medical\\MetaHealthMaui\\BleDev\\BleDev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\VCS\\metahealthMAUI\\BleDev\\BleDev.csproj",
+        "projectUniqueName": "C:\\Medical\\MetaHealthMaui\\BleDev\\BleDev.csproj",
         "projectName": "BleDev",
-        "projectPath": "H:\\VCS\\metahealthMAUI\\BleDev\\BleDev.csproj",
-        "packagesPath": "C:\\Users\\Patrick R Bamber\\.nuget\\packages\\",
-        "outputPath": "H:\\VCS\\metahealthMAUI\\BleDev\\obj\\",
+        "projectPath": "C:\\Medical\\MetaHealthMaui\\BleDev\\BleDev.csproj",
+        "packagesPath": "C:\\Users\\troll\\.nuget\\packages\\",
+        "outputPath": "C:\\Medical\\MetaHealthMaui\\BleDev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Patrick R Bamber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\troll\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

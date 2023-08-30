@@ -202,13 +202,10 @@ C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\l
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libicuuc.a
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-debugger-static.a
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-debugger-stub-static.a
-C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-debugger.dylib
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing-static.a
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing-stub-static.a
-C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing.dylib
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload-static.a
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload-stub-static.a
-C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload.dylib
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.a
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.dylib
 C:\Medical\MetaHealthMaui\MetaHealthMaui\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.iOS.registrar.a
