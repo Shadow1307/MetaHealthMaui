@@ -1,1 +1,0 @@
-C:\Medical\MetaHealthMaui\MetaHealthMaui\MetaHealthMaui.csproj;x64
