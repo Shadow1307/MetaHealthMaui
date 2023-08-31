@@ -2,6 +2,7 @@
 {
     public enum BleState
     {
+
         Closed = 100,
         OpenedAndDisconnect = 101,
         Connecting = 102,
