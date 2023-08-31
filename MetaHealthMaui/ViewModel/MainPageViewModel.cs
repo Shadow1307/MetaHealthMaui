@@ -24,7 +24,7 @@ namespace MetaHealthMaui.ViewModel
 
                 if (Permissions.ShouldShowRationale<BluetoothPermission>())
                 {
-                    await Shell.Current.DisplayAlert("Needs permissions", "BECAUSE!!!", "OK");
+                    await Shell.Current.DisplayAlert("Device permissions request", "Bluetooth permissions required", "OK");
                 }
 
                 status = await Permissions.RequestAsync<BluetoothPermission>();
@@ -39,7 +39,7 @@ namespace MetaHealthMaui.ViewModel
 
                 if (Permissions.ShouldShowRationale<Permissions.LocationWhenInUse>())
                 {
-                    await Shell.Current.DisplayAlert("Needs permissions", "BECAUSE!!!", "OK");
+                    await Shell.Current.DisplayAlert("Device permissions request", "Device location required for bluetooth", "OK");
                 }
 
                 status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
