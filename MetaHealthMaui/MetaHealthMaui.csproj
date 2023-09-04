@@ -55,5 +55,20 @@
 			<HintPath>..\AndroidCustomLibrary\obj\Debug\net7.0-android\AndroidCustomLibrary.dll</HintPath>
 		</ProjectReference>
 	</ItemGroup>
+	
+	<ItemGroup>
+	  <MauiXaml Update="Views\BookingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BurgerMenu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ClinicsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ReportsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
 
 </Project>

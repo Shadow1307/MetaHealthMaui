@@ -1,5 +1,6 @@
 ﻿using Com.Linktop.Infs;
 
+
 namespace MetaHealthMaui.Platforms.Android.BleDev
 {
     public class BleConnectListener : Java.Lang.Object, IOnBleConnectListener
