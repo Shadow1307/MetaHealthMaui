@@ -8,35 +8,30 @@
     Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
-        Title="META - HEALTH"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+     Title="META - HEALTH"
+     ContentTemplate="{DataTemplate local:MainPage}"
+     Route="MainPage" />
 
     <!--Menu items-->
     <ShellContent
         Title="Menu"
         ContentTemplate="{DataTemplate views:BurgerMenu}"
         Route="BurgerMenu" />
-
-    
-    <!--Tabbar/appbar-->
-    <TabBar>
-        <ShellContent
-            Title="Home"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage" />
-        <ShellContent
-            Title="Clinics"
-            ContentTemplate="{DataTemplate views:ClinicsPage}"
-            Route="ClinicsPage" />
-        <ShellContent
-            Title="Bookings"
-            ContentTemplate="{DataTemplate views:BookingsPage}"
-            Route="BookingsPage" />
-        <ShellContent
-            Title="Reports"
-            ContentTemplate="{DataTemplate views:ReportsPage}"
-            Route="ReportsPage" />
-    </TabBar>
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Clinics"
+        ContentTemplate="{DataTemplate views:ClinicsPage}"
+        Route="ClinicsPage" />
+    <ShellContent
+        Title="Bookings"
+        ContentTemplate="{DataTemplate views:BookingsPage}"
+        Route="BookingsPage" />
+    <ShellContent
+        Title="Reports"
+        ContentTemplate="{DataTemplate views:ReportsPage}"
+        Route="ReportsPage" />
 
 </Shell>
